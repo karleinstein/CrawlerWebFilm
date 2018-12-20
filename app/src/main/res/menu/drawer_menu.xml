@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/ServerPhimmoi"
+              android:title="Phim mới"/>
+        <item android:id="@+id/ServerPhimBatHu"
+              android:title="Phim bất hủ"/>
+        <item android:title="BiluTV"
+              android:id="@+id/ServerBiluTV"/>
+        <item android:title="Phim14"
+              android:id="@+id/ServerPhim14"/>
+        <item android:title="Phimnhanh"
+              android:id="@+id/ServerPhimnhanh"/>
+        <item android:title="TVHay"
+              android:id="@+id/ServerTVHay"/>
+        <item android:id="@+id/ServerHdo"
+              android:title="HDO.TV"/>
+
+
+    </group>
+
+</menu>

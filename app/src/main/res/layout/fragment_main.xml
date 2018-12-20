@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:background="#2b2b2b"
+              android:clickable="true"
+              android:layout_height="match_parent">
+    <WebView android:layout_width="match_parent" android:layout_height="match_parent"
+             android:visibility="gone"
+             android:id="@+id/webView"/>
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_marginTop="52dp"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:id="@+id/layoutMovie"
+                        android:layout_height="match_parent">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="24sp"
+                      android:textStyle="bold"
+                      android:id="@+id/txtPhimHot"
+                      android:layout_margin="8dp"
+                      android:textColor="#fff"
+                      android:text="NEW HOT MOVIE"/>
+            <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtPhimHot"
+
+                    android:id="@+id/rcvPhimHot"
+
+            >
+
+            </android.support.v7.widget.RecyclerView>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_below="@+id/rcvPhimHot"
+                      android:textSize="24sp"
+
+                      android:textStyle="bold"
+                      android:id="@+id/txtPhimChieuRap"
+                      android:layout_margin="8dp"
+                      android:textColor="#fff"
+                      android:text="NEW THEATER MOVIE"/>
+            <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtPhimChieuRap"
+
+                    android:id="@+id/rcvPhimChieuRap"
+
+            >
+
+            </android.support.v7.widget.RecyclerView>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="NEW SINGLE MOVIE"
+                      android:textColor="#fff"
+                      android:textSize="24sp"
+                      android:textStyle="bold"
+                      android:layout_below="@+id/rcvPhimChieuRap"
+                      android:id="@+id/txtPhimLeMoiUp"
+                      android:layout_margin="8dp"
+            />
+            <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+
+                    android:id="@+id/rcvPhimLeMoiUp"
+
+                    android:layout_below="@+id/txtPhimLeMoiUp"
+
+                    android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="NEW SERIES MOVIE"
+                      android:textColor="#fff"
+                      android:textSize="24sp"
+                      android:textStyle="bold"
+                      android:layout_margin="8dp"
+                      android:layout_below="@+id/rcvPhimLeMoiUp"
+                      android:id="@+id/txtPhimBoMoiUp"
+            />
+            <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/rcvPhimBoMoiUp"
+                    android:layout_below="@+id/txtPhimBoMoiUp"
+                    android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="NEW ANIME"
+                      android:textColor="#fff"
+                      android:textSize="24sp"
+                      android:layout_margin="8dp"
+                      android:textStyle="bold"
+                      android:layout_below="@+id/rcvPhimBoMoiUp"
+                      android:id="@+id/txtPhimHHMoiUp"
+            />
+            <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+
+                    android:id="@+id/rcvPhimHHMoiUp"
+
+                    android:layout_below="@+id/txtPhimHHMoiUp"
+
+                    android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

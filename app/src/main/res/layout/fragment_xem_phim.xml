@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="#2b2b2b"
+                android:clickable="true"
+                android:id="@+id/layoutXemPhim"
+                android:paddingTop="52dp"
+                android:layout_height="match_parent">
+    <WebView android:layout_width="0dp" android:layout_height="0dp"
+             android:id="@+id/webView3"/>
+
+    <FrameLayout
+
+            android:id="@+id/video_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@android:color/black">
+
+        <com.universalvideoview.UniversalVideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:uvv_autoRotation="false"
+                app:uvv_fitXY="false"/>
+
+        <com.universalvideoview.UniversalMediaController
+                android:id="@+id/media_controller"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:uvv_scalable="true"/>
+
+
+    </FrameLayout>
+    <TextView
+            android:layout_below="@+id/video_layout"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/reso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            android:text="Resolution movie available : "/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginStart="8dp"
+                  android:layout_below="@+id/reso"
+                  android:layout_marginTop="4dp"
+                  android:id="@+id/layoutReso">
+
+
+    </LinearLayout>
+    <TextView
+            android:layout_below="@+id/layoutReso"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/txtServer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            android:text="Server available : "/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="4dp"
+                  android:layout_marginStart="8dp"
+                  android:layout_below="@+id/txtServer"
+                  android:id="@+id/layoutServer">
+    </LinearLayout>
+    <TextView
+            android:layout_below="@+id/layoutServer"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/txtEpisode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            android:text="Episode available : "/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="4dp"
+                  android:layout_marginStart="8dp"
+                  android:layout_below="@+id/txtEpisode"
+                  android:id="@+id/layoutEpisode">
+    </LinearLayout>
+
+</RelativeLayout>
